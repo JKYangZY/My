@@ -14,5 +14,8 @@ var myApp = new Framework7({
 	
 	
 });
+var mainView = myApp.addView('.view-main', {
+    domCache: true //enable inline pages
+});
 
 var $$ = Dom7;
