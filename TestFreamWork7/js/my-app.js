@@ -19,3 +19,12 @@ var mainView = myApp.addView('.view-main', {
 });
 
 var $$ = Dom7;
+
+var mainView = myApp.addView('.view-main', {
+  dynamicNavbar: true
+})
+
+$$('#discover').on('click', function () {
+	$$(this).addClass("active")
+	mainView.router.load({url: '../Framework7/about.html'});
+})
