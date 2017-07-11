@@ -22,36 +22,49 @@
 		 <div class="views">
 	      <!-- Your main view, should have "view-main" class -->
 	      <div class="view view-main">
-	        <!-- Top Navbar-->
-	        <div class="navbar nav-bg">
-	          <div class="navbar-inner">
-	            <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-	            <div class="center sliding">书城</div>
-	          </div>
-	        </div>
 	        <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
 	        <div class="pages navbar-through toolbar-through">
 	          <!-- Page, "data-page" contains page name -->
 	          <div data-page="index" class="page">
+	          	<!-- Top Navbar-->
+		        <div class="navbar nav-bg">
+		          <div class="navbar-inner">
+		            <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+		            <div class="center sliding">暑假</div>
+		          </div>
+		        </div>
 	            <!-- Scrollable page content -->
 	            <div class="page-content">
 	              <p>Page content goes here</p>
 	              <!-- Link to another page -->
-	              <a href="about.html">书城</a>
+	              <a href="about.html">书架</a>
+	              <i  style="background-image: url(img/toolbar/account_active.png); height: 20px;width: 20px;"></i>
 	            </div>
 	          </div>
 	        </div>
-	        <!-- Bottom Toolbar-->
-	        <div class="toolbar">
-	          <div class="toolbar-inner">
-	            <!-- Toolbar links -->
-	            <a href="index.html" class="link"><i class="icon icon-bookstore"></i>书城</a>
-	            <a href="page/choice.html" class="link">精选</a>
-	            <a href="page/find.html" class="link">发现</a>
-	            <a href="page/account.html" class="link">账户</a>
-	          </div>
-	        </div>
-	      </div>
+
+	        <div class="toolbar tabbar tabbar-labels">
+		    <div class="toolbar-inner">
+		        <a href="index.html" class="link active">
+		            <i class="icon demo-icon-1 icon-bookstore"></i>
+		            <span class="tabbar-label">书城</span>
+		        </a>
+		        <a href="page/choice.html" class="link">
+		            <i class="icon demo-icon-2 icon-choice"></i>
+		            <span class="tabbar-label">精选</span>
+		        </a>
+		        <a href="page/find.html" class="link">
+		            <i class="icon demo-icon-3 icon-find"></i>
+		            <span class="tabbar-label">发现</span>
+		        </a>
+		        <a href="page/account.html" class="link">
+		            <i class="icon demo-icon-4 icon-account"></i>
+		            <span class="tabbar-label">账户</span>
+		        </a>
+		    </div>
+		</div>
+        </div>
+
 	    </div>
 		<!-- Path to Framework7 Library JS-->
 		<script type="text/javascript" src="Framework7/js/framework7.min.js"></script>

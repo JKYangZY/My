@@ -3,12 +3,37 @@
 	background: #d43c33;
 }
 /*工具栏-背景图*/
-.store-bg{
-	
+
+.toolbar-inner i {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+}
+
+
+.active > i[class~=icon-bookstore]{
+  background-image: url("../img/toolbar/bookstore_active.png");
+}
+.active > i[class~=icon-choice]{
+  background-image: url("../img/toolbar/choice_active.png");
+}
+.active > i[class~=icon-find]{
+  background-image: url("../img/toolbar/find_active.png");
+}
+.active > i[class~=icon-account]{
+  background-image: url("../img/toolbar/account_active.png");
 }
 
 .icon-bookstore {
-  width: 30px;
-  height: 30px;
   background-image: url("../img/toolbar/bookstore.png");
 }
+.icon-choice {
+  background-image: url("../img/toolbar/choice.png");
+}
+.icon-find {
+  background-image: url("../img/toolbar/find.png");
+}
+.icon-account {
+  background-image: url("../img/toolbar/account.png");
+}
+

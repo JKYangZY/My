@@ -23,8 +23,13 @@ var $$ = Dom7;
 var mainView = myApp.addView('.view-main', {
   dynamicNavbar: true
 })
-
-$$('#discover').on('click', function () {
+var index=myApp.onPageInit('index', function (page) {
+	
+  $$('.toolbar-inner > a').on('click', function () {
+	$$('.toolbar-inner > a').removeClass("active");
 	$$(this).addClass("active")
-	mainView.router.load({url: '../Framework7/about.html'});
-})
+  });
+  
+}).trigger();      
+
+
