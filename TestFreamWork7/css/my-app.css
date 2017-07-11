@@ -37,3 +37,23 @@
   background-image: url("../img/toolbar/account.png");
 }
 
+/*书架-导航栏*/
+.store-navinner{
+	padding-left: 0;
+}
+.store-row{
+	width: 150px;
+}
+.store-zp{
+	margin-right: 2px;
+    height: 43px;
+    line-height: 43px;
+    border-left: 0;
+    border-right: 0;
+    
+   
+}
+.navbar-inner>.center> a[class~=active]{
+	 border-bottom: 3px solid #fff;
+	 background: #d43c33;
+}

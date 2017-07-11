@@ -28,17 +28,34 @@
 	          <div data-page="index" class="page">
 	          	<!-- Top Navbar-->
 		        <div class="navbar nav-bg">
-		          <div class="navbar-inner">
-		            <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-		            <div class="center sliding">暑假</div>
+		          <div class="navbar-inner store-navinner">
+		            <div class="center">
+				      <!-- Buttons row as tabs controller in navbar-->
+				      <div class="buttons-row store-row">
+				        <!-- Link to 1st tab, active -->
+				        <a href="#tab1" class="tab-link active button store-zp">作品</a>
+				        <!-- Link to 2nd tab -->
+				        <a href="#tab2" class="tab-link button store-zp">书单</a>
+				      </div>
+				      </div>
 		          </div>
 		        </div>
 	            <!-- Scrollable page content -->
-	            <div class="page-content">
-	              <p>Page content goes here</p>
-	              <!-- Link to another page -->
-	              <a href="about.html">书架</a>
-	              <i  style="background-image: url(img/toolbar/account_active.png); height: 20px;width: 20px;"></i>
+	            <div class="page-content  tabs">
+				  <!-- Tab 1, active by default -->
+			      <div id="tab1" class="tab active">
+			        <div class="content-block">
+			          <p>This is tab 1 content</p>
+			          ...
+			        </div>
+			      </div>
+			      <!-- Tab 2 -->
+			      <div id="tab2" class="tab">
+			        <div class="content-block">
+			          <p>This is tab 2 content</p>
+			          ...
+			        </div>
+			      </div>
 	            </div>
 	          </div>
 	        </div>
