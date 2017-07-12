@@ -1,92 +1,137 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<!-- Required meta tags-->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-		<!-- Your app title -->
-		<title>书城</title>
-		<!-- Path to Framework7 Library CSS, iOS Theme -->
-		<link rel="stylesheet" href="Framework7/css/framework7.ios.min.css">
-		<!-- Path to Framework7 color related styles, iOS Theme -->
-		<link rel="stylesheet" href="Framework7/css/framework7.ios.colors.min.css">
-		<!-- Path to your custom app styles-->
-		<link rel="stylesheet" href="css/my-app.css">
-	</head>
 
-	<body class="theme-redwine">
-		<!-- Status bar overlay for full screen mode (PhoneGap) -->
-		<div class="statusbar-overlay"></div>
-		 <div class="views">
-	      <!-- Your main view, should have "view-main" class -->
-	      <div class="view view-main">
-	        <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
-	        <div class="pages navbar-through toolbar-through">
-	          <!-- Page, "data-page" contains page name -->
-	          <div data-page="index" class="page">
-	          	<!-- Top Navbar-->
-		        <div class="navbar nav-bg">
-		          <div class="navbar-inner store-navinner">
-		            <div class="center">
-				      <!-- Buttons row as tabs controller in navbar-->
-				      <div class="buttons-row store-row">
-				        <!-- Link to 1st tab, active -->
-				        <a href="#tab1" class="tab-link active button store-zp">作品</a>
-				        <!-- Link to 2nd tab -->
-				        <a href="#tab2" class="tab-link button store-zp">书单</a>
-				      </div>
-				      </div>
-		          </div>
-		        </div>
-	            <!-- Scrollable page content -->
-	            <div class="page-content  tabs">
-				  <!-- Tab 1, active by default -->
-			      <div id="tab1" class="tab active">
-			        <div class="content-block">
-			          <p>This is tab 1 content</p>
-			          ...
-			        </div>
-			      </div>
-			      <!-- Tab 2 -->
-			      <div id="tab2" class="tab">
-			        <div class="content-block">
-			          <p>This is tab 2 content</p>
-			          ...
-			        </div>
-			      </div>
-	            </div>
-	          </div>
-	        </div>
+<head>
+	<!-- Required meta tags-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!-- Your app title -->
+	<title>书城</title>
+	<!-- Path to Framework7 Library CSS, iOS Theme -->
+	<link rel="stylesheet" href="Framework7/css/framework7.ios.min.css">
+	<!-- Path to Framework7 color related styles, iOS Theme -->
+	<link rel="stylesheet" href="Framework7/css/framework7.ios.colors.min.css">
+	<!-- Path to your custom app styles-->
+	<link rel="stylesheet" href="css/my-app.css">
+</head>
 
-	        <div class="toolbar tabbar tabbar-labels">
-		    <div class="toolbar-inner">
-		        <a href="index.html" class="link active">
-		            <i class="icon demo-icon-1 icon-bookstore"></i>
-		            <span class="tabbar-label">书城</span>
-		        </a>
-		        <a href="page/choice.html" class="link">
-		            <i class="icon demo-icon-2 icon-choice"></i>
-		            <span class="tabbar-label">精选</span>
-		        </a>
-		        <a href="page/find.html" class="link">
-		            <i class="icon demo-icon-3 icon-find"></i>
-		            <span class="tabbar-label">发现</span>
-		        </a>
-		        <a href="page/account.html" class="link">
-		            <i class="icon demo-icon-4 icon-account"></i>
-		            <span class="tabbar-label">账户</span>
-		        </a>
-		    </div>
+<body class="theme-redwine">
+	<!-- Status bar overlay for full screen mode (PhoneGap) -->
+	<div class="statusbar-overlay"></div>
+	<div class="views">
+		<!-- Your main view, should have "view-main" class -->
+		<div class="view view-main">
+			<!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+			<div class="pages navbar-through toolbar-through">
+				<!-- Page, "data-page" contains page name -->
+				<div data-page="index" class="page">
+	<!-- Top Navbar-->
+	<div class="navbar nav-bg">
+		<div class="navbar-inner store-navinner">
+			<div class="center">
+				<!-- Buttons row as tabs controller in navbar-->
+				<div class="buttons-row store-row">
+					<!-- Link to 1st tab, active -->
+					<a href="#tab1" class="tab-link active button store-zp">作品</a>
+					<!-- Link to 2nd tab -->
+					<a href="#tab2" class="tab-link button store-zp">书单</a>
+				</div>
+			</div>
 		</div>
-        </div>
+		<div class="right">
+			<i class="icon demo-icon-4 icon-account"></i>
+		</div>
+	</div>
+	<!-- Scrollable page content -->
+	<div class="page-content pull-to-refresh-content tabs" data-ptr-distance="55" style="background: #fff;">
+		<div class="pull-to-refresh-layer">
+			<div class="preloader"></div>
+			<div class="pull-to-refresh-arrow"></div>
+		</div>
+		<!-- Tab 1, active by default -->
+		<div id="tab1" class="tab active">
+			<div class="list-block media-list store-block">
+			  <ul>
+			    <li>
+			      <a href="#" class="item-link item-content">
+			        <div class="item-media"><img src="img/bookshelf/shelf01.jpg" width="80"></div>
+			        <div class="item-inner">
+			          <div class="item-title-row ">
+			            <div class="item-title">老衲要还俗</div>
+			          </div>
+			          <div class="item-subtitle store-sub">一梦黄粱 | 已读 8.8%</div>
+			          <div class="item-text">第385章 嘿，老鼠！ 【求订阅】</div>
+			        </div>
+			      </a>
+			    </li>
+			     <li>
+			      <a href="#" class="item-link item-content">
+			        <div class="item-media"><img src="img/bookshelf/shelf02.jpg" width="80"></div>
+			        <div class="item-inner">
+			          <div class="item-title-row ">
+			            <div class="item-title">修真聊天群</div>
+			          </div>
+			          <div class="item-subtitle store-sub">圣骑士的传说 | 已读 0.5%</div>
+			          <div class="item-text">第385章  瞪谁谁怀孕</div>
+			        </div>
+			      </a>
+			    </li>
+			     <li>
+			      <a href="#" class="item-link item-content">
+			        <div class="item-media"><img src="img/bookshelf/shelf03.jpg" width="80"></div>
+			        <div class="item-inner">
+			          <div class="item-title-row ">
+			            <div class="item-title">别笑哥抓鬼呢</div>
+			          </div>
+			          <div class="item-subtitle store-sub">木木呆呆| 已读 0.8%</div>
+			          <div class="item-text">完本</div>
+			        </div>
+			      </a>
+			    </li>
+			  </ul>
+			</div>
+			<p><a href="#" class="button button-round store-but">浏览记录 ></a></p>
+		</div>
+		<!-- Tab 2 -->
+		<div id="tab2" class="tab">
+			<div class="content-block">
+				<p>This is tab 2 content</p>
+				...
+			</div>
+		</div>
+	</div>
+</div>
+</div>
 
-	    </div>
-		<!-- Path to Framework7 Library JS-->
-		<script type="text/javascript" src="Framework7/js/framework7.min.js"></script>
-		<!-- Path to your app js-->
-		<script type="text/javascript" src="js/my-app.js"></script>
-	</body>
+<div class="toolbar tabbar tabbar-labels">
+<div class="toolbar-inner">
+	<a href="index.html" class="link active">
+		<i class="icon demo-icon-1 icon-bookstore"></i>
+		<span class="tabbar-label">书城</span>
+	</a>
+	<a href="page/choice.html" class="link">
+		<i class="icon demo-icon-2 icon-choice"></i>
+		<span class="tabbar-label">精选</span>
+	</a>
+	<a href="page/find.html" class="link">
+		<i class="icon demo-icon-3 icon-find"></i>
+		<span class="tabbar-label">发现</span>
+	</a>
+	<a href="page/account.html" class="link">
+		<i class="icon demo-icon-4 icon-account"></i>
+		<span class="tabbar-label">账户</span>
+	</a>
+</div>
+</div>
+</div>
+
+	</div>
+	<!-- Path to Framework7 Library JS-->
+	<script type="text/javascript" src="Framework7/js/framework7.min.js"></script>
+	<!-- Path to your app js-->
+	<script type="text/javascript" src="js/my-app.js"></script>
+</body>
 
 </html>

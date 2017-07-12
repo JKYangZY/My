@@ -58,6 +58,16 @@
 	 background: #d43c33;
 }
 
+
+.store-block{
+	margin: 0;
+}
+.store-sub{
+	margin-bottom: 18px;
+    margin-top: 14px;
+}
+
+
 .icon-classify-sm {
 	width: 25px;
     height: 25px;
@@ -84,4 +94,9 @@
 
 .icon-margin-right {
 	margin-right: 10px;
+}
+.store-but{
+	width: 30%;
+    margin-left: 36%;
+     color: #d43c33 !important;
 }
