@@ -29,6 +29,10 @@ var index=myApp.onPageInit('index', function (page) {
 	$$('.toolbar-inner > a').removeClass("active");
 	$$(this).addClass("active")
   });
+  var mySwiper = app.swiper('.swiper-container', {
+    speed: 400,
+    spaceBetween: 100
+});  
   
 }).trigger();      
 

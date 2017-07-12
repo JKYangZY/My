@@ -1,12 +1,55 @@
 <meta charset="utf-8">
 <div class="pages navbar-through toolbar-through">
-  <!-- Page, "data-page" contains page name -->
-  <div data-page="choice" class="page">
-    <!-- Scrollable page content -->
-    <div class="page-content">
-      <p>Page content goes here</p>
-      <!-- Link to another page -->
-      <a href="about.html">精选</a>
-    </div>
-  </div>
+	<!-- Page, "data-page" contains page name -->
+	<div data-page="choice" class="page">
+		<div class="navbar nav-bg">
+			<div class="navbar-inner">
+				<div class="left">
+					<a href="#" data-popover=".popover-links" class="link open-popover">女生</a>
+				</div>
+				<div class="center" style="color: #fff;">
+					精选
+				</div>
+				<div class="right" style="margin-right: 10px;">
+					<i class="icon demo-icon-4 icon-search"></i>
+					<i class="icon demo-icon-4 icon-filter"></i>
+				</div>
+			</div>
+		</div>
+		<!-- Slider container -->
+		
+		<div class="page-content">
+			<div class="swiper-container" style="height: 100px;">
+			<!-- Slides wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">Slide 1</div>
+				<div class="swiper-slide">Slide 2</div>
+				<div class="swiper-slide">Slide 3</div>
+				... other slides ...
+			</div>
+			<!-- Pagination, if required -->
+			<div class="swiper-pagination"></div>
+		</div>
+		</div>
+		<!-- Links popover -->
+		<div class="popover popover-links" style="width: 100px;width: 100px;
+    display: block;
+    top: 46px;
+    left: -3px;">
+			<div class="popover-angle"></div>
+			<div class="popover-inner">
+				<div class="list-block">
+					<ul>
+						<li>
+							<a href="#" class="list-button item-link">男</a>
+						</li>
+						<li>
+							<a href="#" class="list-button item-link">女</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

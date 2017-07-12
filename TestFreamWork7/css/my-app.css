@@ -49,6 +49,12 @@
   margin-right: 25px;
   background-image: url("../img/bookshelf/icon-search.png");
 }
+.icon-filter {
+  width: 24px; 
+  height: 24px;
+  line-height: 24px;
+  background-image: url("../img/bookshelf/icon-filter.jpg");
+}
 
 /*书架-导航栏*/
 .store-navinner{
