@@ -57,3 +57,31 @@
 	 border-bottom: 3px solid #fff;
 	 background: #d43c33;
 }
+
+.icon-classify-sm {
+	width: 25px;
+    height: 25px;
+    background-image: url("../img/icon/classify_01.png");
+}
+
+.icon-nbr {
+	width: 27px;
+    height: 27px;
+    background-image: url("../img/icon/nbr_03.png");
+}
+
+.icon-fine {
+	width: 23px;
+    height: 23px;
+    background-image: url("../img/icon/fine.png");
+}
+
+.icon-free {
+	width: 25px;
+    height: 25px;
+    background-image: url("../img/icon/free.png");
+}
+
+.icon-margin-right {
+	margin-right: 10px;
+}
