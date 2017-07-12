@@ -36,6 +36,19 @@
 .icon-account {
   background-image: url("../img/toolbar/account.png");
 }
+.icon-more {
+  width: 24px; 
+  height: 24px;
+  line-height: 24px;
+  background-image: url("../img/bookshelf/icon-more.png");
+}
+.icon-search {
+  width: 24px; 
+  height: 24px;
+  line-height: 24px;
+  margin-right: 25px;
+  background-image: url("../img/bookshelf/icon-search.png");
+}
 
 /*书架-导航栏*/
 .store-navinner{
@@ -99,4 +112,10 @@
 	width: 30%;
     margin-left: 36%;
      color: #d43c33 !important;
+}
+.store-but01{
+	 width: 27%;
+    margin-left: 16%;
+    display: inline-block;
+    color: #d43c33 !important;
 }
