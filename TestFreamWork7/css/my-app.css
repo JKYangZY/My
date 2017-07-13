@@ -215,3 +215,7 @@
     display: inline-block;
     color: #d43c33 !important;
 }
+.swiper-img{
+	height: 150px;
+	width: 100%;
+}
