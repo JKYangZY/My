@@ -219,3 +219,33 @@
 	height: 150px;
 	width: 100%;
 }
+.choice-phb {
+    background-image: url("../img/icon/nbr_01.png");
+}
+.choice-fl {
+    background-image: url("../img/icon/classify.png");
+}
+.choice-qy {
+    background-image: url("../img/icon/hehe.png");
+}
+.choice-zt {
+    background-image: url("../img/icon/event.png");
+}
+.choice-lb {
+	width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    background-image: url("../img/bookshelf/laba.png");
+}
+.icon-shu {
+	width: 20px;
+    height: 20px;
+    background-image: url("../img/bookshelf/shu.png");
+}
+.icon-touxiang {
+	width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-image: url("../img/bookshelf/touxiang.png");
+}
+
