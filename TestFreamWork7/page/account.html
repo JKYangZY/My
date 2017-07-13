@@ -4,44 +4,69 @@
 	<div data-page="account" class="page">
 		<div class="navbar nav-bg">
 			<div class="navbar-inner">
-				<!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-				<div class="row" style="width: 100%;">
-					<div class="col-60"></div>
-					<div class="col-20">
-						<a>消息</a>
-					</div>
-					<div class="col-20">
-						<a>设置</a>
-					</div>
+				<div class="left"></div>
+				<div class="center"></div>
+				<div class="right">
+					<a><i class="icon icon-message"></i></a>
+					<a><i class="icon icon-setting"></i></a>
 				</div>
 			</div>
 		</div>
 		<!-- Scrollable page content -->
 		<div class="page-content">
 
-			<div class="list-block" style="margin:0">
+			<!--<div class="content-block-title">
+				<div class="row">
+					<div class="col-20">
+						<img src="../Framework7/img/i-f7-ios.png" />
+					</div>
+					<div class="col-20" style="text-align: center;">
+						<a class=""><span>0</span>张月票</a>
+					</div>
+					<div class="col-60" style="text-align: right;">
+						<span>0</span>张主站推荐票
+					</div>
+				</div>
+			</div>-->
+			
+			<div class="list-block" style="margin: 0;">
 				<ul>
 					<li>
-						<a href="about.html" class="item-link">
-							<div class="item-content">
-								<div class="item-inner">
-									<div class="row" style="width: 100%;">
-										<div class="col-30">头像</div>
-										<div class="col-30">月票</div>
-										<div class="col-40">主战推荐票</div>
-									</div>
-								</div>
+						<div class="row">
+							<div class="col-30" style="line-height: 44px; margin-left: 15px;">
+								<img src="../Framework7/img/i-f7-ios.png" />
 							</div>
-						</a>
+							<div class="col-30">
+								<a href="#" class="item-link">
+									<div class="item-content">
+										<div class="item-inner">
+											<div class="item-title"><span>0</span>张月票</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-40" style="line-height: 44px;text-align: right;margin-right: 15px;">
+								<span>0</span>张主站推荐票
+							</div>
+						</div>
 					</li>
 				</ul>
 			</div>
 
 			<div class="content-block-inner">
-				<div class="row">
+				<!--<div class="row">
 					<div class="col-80">起点币</div>
 					<div class="col-20">
 						<a href="#" class="button button-fill color-red">充值</a>
+					</div>
+				</div>-->
+				<div class="navbar nav-white nno">
+					<div class="navbar-inner">
+						<div class="left"><span style="color: #D43C33; margin-right:5px ;">0</span>起点币</div>
+						<div class="center"></div>
+						<div class="right">
+							<a href="#" class="button button-fill color-red">充值</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -49,19 +74,10 @@
 			<div class="list-block">
 				<ul>
 					<li>
-						<a href="about.html" class="item-link">
-							<div class="item-content">
-								<div class="item-inner">
-									<div class="item-title">会员等级</div>
-								</div>
-							</div>
-						</a>
-					</li>
-					<li>
 						<a href="services.html" class="item-link">
 							<div class="item-content">
 								<div class="item-inner">
-									<div class="item-title">我的等级</div>
+									<div class="item-title"><i class="icon icon-my-level icon-margin-right"></i>我的等级</div>
 								</div>
 							</div>
 						</a>
@@ -70,7 +86,7 @@
 						<a href="form.html" class="item-link">
 							<div class="item-content">
 								<div class="item-inner">
-									<div class="item-title">我的勋章</div>
+									<div class="item-title"><i class="icon icon-my-badge icon-margin-right"></i>我的勋章</div>
 								</div>
 							</div>
 						</a>
@@ -79,7 +95,7 @@
 						<a href="form.html" class="item-link">
 							<div class="item-content">
 								<div class="item-inner">
-									<div class="item-title">我的阅历</div>
+									<div class="item-title"><i class="icon icon-my-experience icon-margin-right"></i>我的阅历</div>
 								</div>
 							</div>
 						</a>
@@ -89,7 +105,7 @@
 
 			<div class="content-block-inner">
 				<div>
-					活动广告站位
+					限时开放所有分类
 				</div>
 			</div>
 
@@ -99,7 +115,7 @@
 						<a href="about.html" class="item-link">
 							<div class="item-content">
 								<div class="item-inner">
-									<div class="item-title">邀请有礼</div>
+									<div class="item-title"><i class="icon icon-request icon-margin-right"></i>邀请有礼</div>
 								</div>
 							</div>
 						</a>
@@ -108,55 +124,39 @@
 						<a href="services.html" class="item-link">
 							<div class="item-content">
 								<div class="item-inner">
-									<div class="item-title">签到</div>
-								</div>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="form.html" class="item-link">
-							<div class="item-content">
-								<div class="item-inner">
-									<div class="item-title">领币</div>
-								</div>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="form.html" class="item-link">
-							<div class="item-content">
-								<div class="item-inner">
-									<div class="item-title">成为作家</div>
+									<div class="item-title"><i class="icon icon-sign icon-margin-right"></i>签到</div>
 								</div>
 							</div>
 						</a>
 					</li>
 				</ul>
 			</div>
-
 			<div class="list-block">
 				<ul>
 					<li>
-						<a href="about.html" class="item-link">
+						<a href="form.html" class="item-link">
 							<div class="item-content">
 								<div class="item-inner">
-									<div class="item-title">兑换礼品码</div>
-								</div>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="services.html" class="item-link">
-							<div class="item-content">
-								<div class="item-inner">
-									<div class="item-title">积分商城</div>
+									<div class="item-title"><i class="icon icon-exchange icon-margin-right"></i>自动订阅</div>
 								</div>
 							</div>
 						</a>
 					</li>
 				</ul>
 			</div>
-
+			<div class="list-block">
+				<ul>
+					<li>
+						<a href="form.html" class="item-link">
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title"><i class="icon icon-author icon-margin-right"></i>成为作家</div>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>
