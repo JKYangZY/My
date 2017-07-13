@@ -77,6 +77,46 @@
 	 background: #d43c33;
 }
 
+.icon-message {
+	width: 25px;
+	height: 25px;
+    background-image: url("../img/icon/message.png");
+}
+
+.icon-setting {
+	width: 25px;
+	height: 25px;
+    background-image: url("../img/icon/setting.png");
+}
+
+.icon-booklist {
+    background-image: url("../img/icon/book_list.png");
+}
+
+.icon-listen {
+    background-image: url("../img/icon/listen.png");
+}
+
+.icon-red-envelope {
+    background-image: url("../img/icon/red_envelope.png");
+}
+
+.toolbar-height i {
+	width: 45px !important;
+}
+
+.toolbar-height i.icon {
+	height: 45px !important;
+}
+
+.toolbar-font-size {
+	font-size: 17px !important;
+}
+
+.toobar-color {
+	color: white !important;
+}
+
 
 .store-block{
 	margin: 0;
@@ -85,7 +125,6 @@
 	margin-bottom: 18px;
     margin-top: 14px;
 }
-
 
 .icon-classify-sm {
 	width: 25px;
@@ -111,9 +150,60 @@
     background-image: url("../img/icon/free.png");
 }
 
+.icon-my-level {
+	width: 22px;
+    height: 22px;
+    background-image: url("../img/icon/level.png");
+}
+
+.icon-my-badge {
+	width: 25px;
+    height: 25px;
+    background-image: url("../img/icon/badge.png");
+}
+
+.icon-my-experience {
+	width: 25px;
+    height: 25px;
+    background-image: url("../img/icon/experience.png");
+}
+
+.icon-request {
+	width: 25px;
+    height: 25px;
+    background-image: url("../img/icon/request.png");
+}
+
+.icon-exchange {
+	width: 25px;
+    height: 25px;
+    background-image: url("../img/icon/exchange.png");
+}
+
+.icon-author {
+	width: 27px;
+    height: 27px;
+    background-image: url("../img/icon/author.png");
+}
+
+.icon-sign {
+	width: 25px;
+    height: 25px;
+    background-image: url("../img/icon/sign.png");
+}
+
 .icon-margin-right {
 	margin-right: 10px;
 }
+
+.nav-white{
+	background: white;
+}
+
+.nno:after {
+	background-color: white;
+}
+
 .store-but{
 	width: 30%;
     margin-left: 36%;
